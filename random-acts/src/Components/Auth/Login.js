@@ -7,7 +7,8 @@ class Login extends React.Component {
     this.state = {
       username: "",
       password: "",
-      error: false
+      error: false,
+      loggedIn: false
     };
   }
 
@@ -17,6 +18,7 @@ class Login extends React.Component {
 
   login = event => {
     event.preventDefault();
+    this.setState({ loggedIn: true });
     const endpoint = "https://random-acts-webpt5.herokuapp.com/api/auth/login";
     const userLogin = {
       username: this.state.username,
