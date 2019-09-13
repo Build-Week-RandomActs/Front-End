@@ -13,13 +13,20 @@ class NavBarLoggedIn extends React.Component {
     };
   }
 
+  logout = () => {
+    localStorage.removeItem("jwt");
+    this.props.history.push("/");
+  };
+
   render() {
     return (
       <div>
         <NavLink to="/welcome">Welcome</NavLink>
         <NavLink to="/contacts">Contacts</NavLink>
         <NavLink to="/acts">Acts</NavLink>
-        <NavLink to="/logout">Log Out</NavLink>
+        <NavLink to="/" onClick={this.logout}>
+          Log Out
+        </NavLink>
 
         <Route path="/welcome" render={props => <Welcome {...props} />} />
         <Route path="/contacts" render={props => <Contacts {...props} />} />
