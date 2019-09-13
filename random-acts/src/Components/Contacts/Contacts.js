@@ -33,6 +33,10 @@ class Contacts extends React.Component {
       });
   };
 
+  login = event => {
+    this.props.history.push("/login");
+  };
+
   contacts = () => {
     if (this.state.loggedIn) {
       return (
@@ -49,7 +53,12 @@ class Contacts extends React.Component {
         </div>
       );
     } else {
-      return <div>You need to be logged in!</div>;
+      return (
+        <div>
+          <h2>You need to be logged in!</h2>
+          <button onClick={this.login}>Log In</button>
+        </div>
+      );
     }
   };
 

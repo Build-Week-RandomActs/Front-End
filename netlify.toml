@@ -7,3 +7,7 @@ command = "yarn build"
   from = "/*"
   to = "/index.html"
   status = 200
+
+  from = '/api/*'
+  to = "https://random-acts-webpt5.herokuapp.com/:splat"
+  status = 200
