@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 
 import NavBarLoggedIn from "./Components/NavBar-LoggedIn";
 import NavBarLoggedOut from "./Components/NavBar-LoggedOut";
-import Home from "./Components/Home";
 
 function App() {
   return (

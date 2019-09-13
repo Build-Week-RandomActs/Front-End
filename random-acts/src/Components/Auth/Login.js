@@ -29,6 +29,7 @@ class Login extends React.Component {
       .post(endpoint, userLogin)
       .then(res => {
         localStorage.setItem("jwt", res.data.token);
+        localStorage.setItem("id", res.data.id);
         this.props.history.push("/welcome");
       })
       .catch(error => {
