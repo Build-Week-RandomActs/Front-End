@@ -4,6 +4,7 @@ import "./app.css";
 
 import NavBarLoggedIn from "./Components/NavBar-LoggedIn";
 import NavBarLoggedOut from "./Components/NavBar-LoggedOut";
+import Home from "./Components/Home";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" exact component={NavBarLoggedOut} />
       <Route path="/register" exact component={NavBarLoggedOut} />
       <Route path="/login" exact component={NavBarLoggedOut} />
+      <Route path="/" exact component={Home} />
 
       <Route path="/welcome" exact component={NavBarLoggedIn} />
       <Route path="/contacts" component={NavBarLoggedIn} />

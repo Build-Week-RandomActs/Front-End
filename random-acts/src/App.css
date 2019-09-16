@@ -12,3 +12,8 @@ h4 {
 a {
   font-family: "Open Sans", sans-serif;
 }
+
+* {
+  align-items: center;
+  justify-content: center;
+}
