@@ -16,6 +16,10 @@ class NavBarLoggedOut extends React.Component {
   render() {
     return (
       <div>
+        <img
+          src="https://live.staticflickr.com/65535/48728141972_6422f12840_m.jpg"
+          alt="random acts"
+        />
         <NavLink exact to="/">
           Home
         </NavLink>

@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
 import { Route } from "react-router-dom";
+import "./app.css";
 
 import NavBarLoggedIn from "./Components/NavBar-LoggedIn";
 import NavBarLoggedOut from "./Components/NavBar-LoggedOut";

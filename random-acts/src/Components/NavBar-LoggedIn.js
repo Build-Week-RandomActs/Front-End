@@ -21,7 +21,10 @@ class NavBarLoggedIn extends React.Component {
   render() {
     return (
       <div>
-        <NavLink to="/welcome">Welcome</NavLink>
+        <img
+          src="https://live.staticflickr.com/65535/48728141972_6422f12840_m.jpg"
+          alt="random acts"
+        />
         <NavLink to="/contacts">Contacts</NavLink>
         <NavLink to="/acts">Acts</NavLink>
         <NavLink to="/" onClick={this.logout}>
