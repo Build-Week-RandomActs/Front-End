@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Route } from "react-router-dom";
-import "../css/navbarloggedout.css";
+import "../css/navbar.css";
 
 import Home from "./Home";
 import Login from "./Auth/Login";

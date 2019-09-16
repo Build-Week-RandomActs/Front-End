@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/welcome.css";
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -18,13 +19,15 @@ class Welcome extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="welcome">
         <img
           src="https://live.staticflickr.com/65535/48724482442_625b483666.jpg"
           alt="main"
         />
-        <button onClick={this.contacts}>Contacts</button>
-        <button onClick={this.acts}>Acts</button>
+        <div className="buttons">
+          <button onClick={this.contacts}>Contacts</button>
+          <button onClick={this.acts}>Acts</button>
+        </div>
       </div>
     );
   }
