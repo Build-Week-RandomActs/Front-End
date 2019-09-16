@@ -34,8 +34,6 @@ class NavBarLoggedOut extends React.Component {
             Register
           </NavLink>
         </div>
-        <Route path="/register" render={props => <Register {...props} />} />
-        <Route path="/login" render={props => <Login {...props} />} />
       </div>
     );
   }

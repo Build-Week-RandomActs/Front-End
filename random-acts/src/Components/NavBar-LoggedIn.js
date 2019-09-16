@@ -21,19 +21,19 @@ class NavBarLoggedIn extends React.Component {
   render() {
     return (
       <div>
-        <img
-          src="https://live.staticflickr.com/65535/48728141972_6422f12840_m.jpg"
-          alt="random acts"
-        />
-        <NavLink to="/contacts">Contacts</NavLink>
-        <NavLink to="/acts">Acts</NavLink>
-        <NavLink to="/" onClick={this.logout}>
-          Log Out
-        </NavLink>
-
-        <Route path="/welcome" render={props => <Welcome {...props} />} />
-        <Route path="/contacts" render={props => <Contacts {...props} />} />
-        <Route path="/acts" render={props => <Acts {...props} />} />
+        <div>
+          <img
+            src="https://live.staticflickr.com/65535/48728141972_6422f12840_m.jpg"
+            alt="random acts"
+          />
+        </div>
+        <div>
+          <NavLink to="/contacts">Contacts</NavLink>
+          <NavLink to="/acts">Acts</NavLink>
+          <NavLink to="/" onClick={this.logout}>
+            Log Out
+          </NavLink>
+        </div>
       </div>
     );
   }

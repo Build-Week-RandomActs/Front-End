@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "../../css/register.css";
 
 class Register extends React.Component {
   constructor(props) {
@@ -40,8 +41,8 @@ class Register extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Register here!</h2>
+      <div className="register">
+        <h2>Sign Up for Random Acts</h2>
         <form onSubmit={this.register}>
           <input
             onChange={this.inputHandler}
